@@ -52,21 +52,21 @@ let name = multiply(6, 8)
 printAnswer(name);
 
 //3. Power
-function Power(x, y) {
+function power(x, y) {
     let answer3 = 1;
     for (let i = 0; i < y; i++) {
-        answer3 = mult(answer3, x)
+        answer3 = multiply(answer3, x)
     }
     return answer3;
 }
-let ranya = Power(2, 8)
+let ranya = power(2, 8)
 printAnswer(ranya);
 
 //4. Factorial
 function Factorial(x) {
     let answer4 = x;
     for (let i = x; i >= 2; i = add(i, -1)) {
-        answer4 = mult(answer4, add(i, -1))
+        answer4 = multiply(answer4, add(i, -1))
     }
     return answer4;
 }
