@@ -41,48 +41,63 @@ printAnswer(answer1);
 
 
 //2. Multiply
-function mult(x, y) {
+function multiply(x, y) {
     let answer2 = 0;
     for (let i = 0; i < y; i++) {
         answer2 = add(answer2, x)
     }
     return answer2;
 }
-let name= mult(6,8)
+let name = multiply(6, 8)
 printAnswer(name);
 
 //3. Power
-function pow(x,y) {
+function Power(x, y) {
     let answer3 = 1;
     for (let i = 0; i < y; i++) {
         answer3 = mult(answer3, x)
     }
     return answer3;
 }
-let ranya= pow(2, 8)
+let ranya = Power(2, 8)
 printAnswer(ranya);
 
 //4. Factorial
 function Factorial(x) {
     let answer4 = x;
-    for (let i = x; i >= 2; i = add(i,-1)) {
-        answer4 = mult(answer4, add(i,-1))
+    for (let i = x; i >= 2; i = add(i, -1)) {
+        answer4 = mult(answer4, add(i, -1))
     }
     return answer4;
 }
-let Fact= Factorial(4)
+let Fact = Factorial(4)
 printAnswer(Fact);
+
+//4. AGAIN for Morgan :)
+//var num=4
+//var fact=1
+//var a=1
+//for(a=1; a<=num; a++)
+//{
+//  fact=fact*a;
+//}
+//printAnswer(fact)
+
 
 //5. Fibonacci
 //1,1,2,3,5,8,13
-var a,b,result;
 
-a=0;
-b=1;
-result-b;
-for(var i=1; i<8; i++) {
-    document.write(result+"<br/>");
-    result= a+b; 
-    a=b;
-    b=result;
+
+function Fibonacci(n) {
+    var a, b, result;
+    a = 0;
+    b = 1;
+    for (var i = 2; i < n; i++) {
+        result = a + b;
+        a = b;
+        b = result;
+    }
+   return result
 }
+let answer5= Fibonacci(8)
+printAnswer(answer5);
